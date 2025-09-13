@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online-Autocar-purchase-Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-gray-50">
+
+  <!-- Main Container -->
+  <div class="flex">
+
+    <!-- Sidebar -->
+    <div class="hidden md:block w-60 min-h-screen bg-white border-r relative">
+      <!-- Logo -->
+      <div class="flex items-center gap-2 p-4">
+        <img src="./img/pngwing.com (3).png" class="w-10 h-10" alt="logo">
+        <h1 class="text-xl font-semibold text-gray-800">Cars</h1>
+      </div>
+
+      <!-- Menu Items -->
+      <nav class="mt-4 space-y-1">
+        <a href="#" class="flex items-center justify-between px-4 py-3 bg-red-400 text-white rounded-r-full">
+          <div class="flex items-center gap-3">
+            <i data-feather="grid"></i>
+            <span class="text-base font-medium">Dashboard</span>
+          </div>
+          <i data-feather="chevron-right" class="w-4 h-4"></i>
+        </a>
+
+        <a href="#" class="flex items-center gap-3 px-6 py-3 text-gray-600 hover:text-red-400">
+          <i data-feather="user"></i>
+          <span>Assets</span>
+        </a>
+        <a href="#" class="flex items-center gap-3 px-6 py-3 text-gray-600 hover:text-red-400">
+          <i data-feather="truck"></i>
+          <span>Booking</span>
+        </a>
+        <a href="#" class="flex items-center gap-3 px-6 py-3 text-gray-600 hover:text-red-400">
+          <i data-feather="shopping-bag"></i>
+          <span>Sell Cars</span>
+        </a>
+        <a href="#" class="flex items-center gap-3 px-6 py-3 text-gray-600 hover:text-red-400">
+          <i data-feather="shopping-cart"></i>
+          <span>Buy Cars</span>
+        </a>
+        <a href="#" class="flex items-center gap-3 px-6 py-3 text-gray-600 hover:text-red-400">
+          <i data-feather="scissors"></i>
+          <span>Services</span>
+        </a>
+        <a href="#" class="flex items-center gap-3 px-6 py-3 text-gray-600 hover:text-red-400">
+          <i data-feather="calendar"></i>
+          <span>Calendar</span>
+        </a>
+      </nav>
+
+      <!-- Bottom -->
+      <div class="absolute bottom-6 w-60 space-y-2">
+        <a href="#" class="flex items-center gap-3 px-6 py-3 text-gray-600 hover:text-red-400">
+          <i data-feather="settings"></i>
+          <span>Settings</span>
+        </a>
+        <a href="#" class="flex items-center gap-3 px-6 py-3 text-gray-600 hover:text-red-400">
+          <i data-feather="log-out"></i>
+          <span>Log out</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Right Content -->
+    <div class="flex-1 bg-gray-100 p-4 sm:p-6">
+      <!-- Top Bar -->
+      <div class="flex items-center justify-between flex-wrap gap-4">
+        <div class="relative w-full sm:w-80">
+          <input type="text" placeholder="Search or type"
+            class="w-full pl-10 pr-4 py-2 rounded-lg border focus:outline-none focus:ring-2 focus:ring-gray-300">
+          <svg xmlns="http://www.w3.org/2000/svg"
+            class="w-5 h-5 absolute left-3 top-2.5 text-gray-400"
+            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              stroke-width="2"
+              d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 104.5 4.5a7.5 7.5 0 0012.15 12.15z" />
+          </svg>
+        </div>
+
+        <div class="flex items-center gap-6">
+          <!-- Bell Icon -->
+          <div class="relative hover:cursor-pointer">
+            <svg xmlns="http://www.w3.org/2000/svg"
+              class="w-6 h-6 text-gray-600" fill="none"
+              viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11
+                 a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341
+                 C7.67 6.165 6 8.388 6 11v3.159
+                 c0 .538-.214 1.055-.595 1.436L4 17h5
+                 m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+            </svg>
+            <span
+              class="absolute top-0 right-0 block w-2 h-2 rounded-full bg-red-500"></span>
+          </div>
+
+          <!-- User Avatar -->
+          <img src="https://randomuser.me/api/portraits/men/32.jpg"
+            class="w-10 h-10 rounded-full border hover:cursor-pointer"
+            alt="user">
+        </div>
+      </div>
+
+      <!-- Welcome Text -->
+      <div class="mt-4">
+        <h1 class="text-2xl md:text-3xl font-semibold text-gray-800">Welcome back, Max</h1>
+        <p class="text-gray-500 mt-1">Here's what's happening with your store today.</p>
+      </div>
+
+      <!-- Main Content -->
+      <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Big Card -->
+        <div class="col-span-1 sm:col-span-2 bg-white rounded-xl shadow p-4 relative">
+          <h2 class="text-xl font-semibold text-gray-800">2022 Mercedes Benz</h2>
+          <div class="flex flex-col md:flex-row items-center justify-between">
+            <img src="./img/images.jpeg" class="max-w-full h-auto md:w-[500px]" alt="car">
+            <!-- Circle -->
+            <div class="relative mt-4 md:mt-0 md:absolute md:right-10 md:top-1/2 md:-translate-y-1/2">
+              <div
+                class="w-[130px] h-[130px] md:w-[165px] md:h-[165px] rounded-full border-8 border-red-100 flex flex-col items-center justify-center bg-red-50 text-gray-500 font-bold">
+                <span class="text-lg md:text-xl">631 mc</span>
+                <span class="text-sm font-normal text-red-600">Load Time</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Small Cards -->
+        <div class="space-y-4">
+          <div class="bg-gray-300 flex flex-col sm:flex-row rounded-xl shadow">
+            <div class="p-2">
+              <p class="text-gray-800 font-semibold">Range <br> 25%</p>
+              <p class="text-sm text-gray-500">market average <br> is $16,224</p>
+            </div>
+            <img src="./img/images.jpeg" class="max-w-full h-auto sm:w-[200px] rounded-xl" alt="car">
+          </div>
+
+          <div class="bg-gray-300 flex flex-col sm:flex-row rounded-xl shadow">
+            <div class="p-2">
+              <p class="text-gray-800 font-semibold">Range <br> 25%</p>
+              <p class="text-sm text-gray-500">market average <br> is $16,224</p>
+            </div>
+            <img src="./img/download.jpeg" class="max-w-full h-auto sm:w-[200px] rounded-xl" alt="car">
+          </div>
+        </div>
+      </div>
+
+      <!-- Trending Cars -->
+      <div class="bg-gray-100 mt-6">
+        <div class="flex flex-col md:flex-row justify-between gap-4">
+          <h1 class="p-4 font-bold text-lg">Trending Cars</h1>
+          <div class="flex flex-wrap p-4 gap-4">
+            <h1 class="bg-white text-gray-400 font-bold rounded-full px-6 py-1.5 hover:cursor-pointer">New
+              <i class="fa-solid fa-angle-down"></i></h1>
+            <h1 class="bg-white text-gray-400 font-bold rounded-full px-6 py-1.5 hover:cursor-pointer">Toyota
+              <i class="fa-solid fa-angle-down"></i></h1>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap gap-6 justify-center">
+          <!-- Card -->
+          <div class="bg-[#e0c7ff] relative w-full sm:w-[350px] h-[250px] rounded-3xl">
+            <h1 class="p-5 font-bold">Porshe 718 Cayman s 
+              <i class="fa-solid fa-heart text-red-500 text-2xl absolute right-10"></i>
+              <br>
+              <span class="text-gray-400 font-semibold">coupe</span>
+            </h1>
+            <img src="./img/pngwing.com.png" class="w-40 sm:w-60 absolute top-10 left-10" alt="">
+            <div class="flex justify-between px-6 mt-[120px]">
+              <div class="flex gap-4 text-gray-500 text-lg">
+                <h1><i class="fa-regular text-[#a971f4] fa-user"></i> 4</h1>
+                <h1>Manual</h1>
+              </div>
+              <div>$400<span class="text-gray-500">/d</span></div>
+            </div>
+          </div>
+
+          <div class="bg-[#ffc6c7] relative w-full sm:w-[350px] h-[250px] rounded-3xl">
+            <h1 class="p-5 font-bold">Porshe 718 Cayman s 
+              <i class="fa-regular absolute right-10 text-2xl fa-heart text-gray-500"></i>
+              <br>
+              <span class="text-gray-400 font-semibold">coupe</span>
+            </h1>
+            <img src="./img/pngwing.com (1).png" class="w-40 sm:w-60 absolute top-[70px] left-10" alt="">
+            <div class="flex justify-between px-6 mt-[120px]">
+              <div class="flex gap-4 text-gray-500 text-lg">
+                <h1><i class="fa-regular text-[#e5797f] fa-user"></i> 4</h1>
+                <h1>Manual</h1>
+              </div>
+              <div>$400<span class="text-gray-500">/d</span></div>
+            </div>
+          </div>
+
+          <div class="bg-[#fff4cd] relative w-full sm:w-[350px] h-[250px] rounded-3xl">
+            <h1 class="p-5 font-bold">Porshe 718 Cayman s 
+              <i class="fa-solid fa-heart text-red-500 text-2xl absolute right-10"></i>
+              <br>
+              <span class="text-gray-400 font-semibold">coupe</span>
+            </h1>
+            <img src="./img/pngwing.com (2).png" class="w-40 sm:w-60 absolute top-10 left-10" alt="">
+            <div class="flex justify-between px-6 mt-[120px]">
+              <div class="flex gap-4 text-gray-500 text-lg">
+                <h1><i class="fa-regular text-[#e0d181] fa-user"></i> 4</h1>
+                <h1>Manual</h1>
+              </div>
+              <div>$400<span class="text-gray-500">/d</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    feather.replace();
+  </script>
+</body>
+</html>
